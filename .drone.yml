@@ -16,3 +16,7 @@ steps:
 # services:
 #   - name: cache
 #     image: redis
+
+---
+kind: signature
+hmac: ec6688138eab7b0bb7285fbd244a980f71021341ff47b77089eeb32aecb356cd
