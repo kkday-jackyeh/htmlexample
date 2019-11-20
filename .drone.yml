@@ -4,21 +4,18 @@ type: docker
 name: default
 
 steps:
-  - name: cache
-    image: redis
-    detach: true
-
   - name: ping
     image: redis
     commands:
-      # - sleep 5
+      - sleep 5
       - redis-cli -h cache ping
-# services:
-#   - name: cache
-#     image: redis
+
+services:
+  - name: cache
+    image: redis
 
 ---
 kind: signature
-hmac: 994a9dd3e3e18e1cb21dc94566aa5a5605bce146727965c4b6f40d30d39906e1
+hmac: 9240a3ecc30b71acad1e0ae33818dd7d7055ed23603a59e07738fb5d88371fbf
 
 ...
