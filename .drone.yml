@@ -11,7 +11,7 @@ steps:
   - name: ping
     image: redis
     commands:
-      - sleep 5
+      # - sleep 5
       - redis-cli -h cache ping
 # services:
 #   - name: cache
@@ -20,5 +20,3 @@ steps:
 ---
 kind: signature
 hmac: b347ba509b66bcd4857981e1793c9faf6348b45e3063fa93ba647bae8cb7e0ff
-
-...
